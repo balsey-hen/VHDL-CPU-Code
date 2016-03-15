@@ -4,10 +4,10 @@ use ieee.numeric_std.all;		--libary for the arithmetic signals
  
 entity ALU is
 	port(	-- Signed means these can be -ve or +ve, unsigned can only be +ve.
-		Enable		: in std_logic; 				--clock signal
-		AC, SigBus	: in signed(7 downto 0);	--input operands
-		Logic			: in unsigned(3 downto 0);	--Operation to be performed
-		ALUOutput	: out signed(7 downto 0)	--output of ALU
+		Enable		  : in std_logic; 				  --clock signal
+		AC, SigBus	: in signed(7 downto 0);  --input operands
+		Logic			  : in unsigned(3 downto 0);--Operation to be performed
+		ALUOutput	  : out signed(7 downto 0)	--output of ALU
 	);
 end entity ALU;
  
